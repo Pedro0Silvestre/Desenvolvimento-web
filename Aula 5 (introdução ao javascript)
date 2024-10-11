@@ -1,0 +1,50 @@
+console.log(2+2); //soma
+console.log("1"+2); //concatena
+const preco = 50;
+let resultado = preco < 40? "Livro é barato":"livro não é barato"; //ternário
+console.log(resultado);
+if (preco < 40) {
+  resultado = "Livro é barato"
+}
+else {
+  resultado = "Livro não é barato"
+}
+console.log(resultado);
+console.log(typeof preco);
+console.log( [10.0,12.0] instanceof Array);
+console.log( ("Olá") instanceof String);
+
+const meuArray = [1,2,3];
+
+const meuObjeto = {
+ texto : 'um texto',
+ numero : 40
+
+ }
+ console.log(meuObjeto.texto)
+
+function soma(a,b){
+  return a + b;
+}
+console.log(soma(3,4));
+
+const anonima = function(a,b){
+  return a + b;
+}
+console.log(anonima(4,3));
+
+const arrow = (a,b) => {
+  return a + b;
+}
+console.log(arrow(4,5))
+
+const arrow2 = (a,b) => a + b;
+// arrow function sereve para funções danonima s d euma linha retorno automatico
+
+const arrow3 = a => a + 2;
+// caso a arrow function tenha apenas um parametro n precisa dos parenteses
+
+const dobro = (elemento) => {console.log(elemento * 2)};
+// percorre array e imprime cada dobro
+
+meuArray.forEach(dobro); // percorre cada elemento do array e executa a função dobro e cada

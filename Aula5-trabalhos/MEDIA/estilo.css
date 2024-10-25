@@ -1,0 +1,45 @@
+#minha-div{
+    width: 80%;
+    margin: 0 auto; /* macete para centraizar*/
+    height: 50vh;
+    background-color: brown;
+}
+
+@media screen and (min-width: 640px) {
+    #minha-div{
+        background-color: black;
+        height: 20vh;
+    }
+}
+@media screen and (min-width: 1007px) {
+    #minha-div{
+        background-color: red;
+        height: 20vh;
+    }
+}
+@media screen and (min-width: 1008px) {
+    #minha-div{
+        background-color: blue;
+        height: 20vh;
+    }
+}
+@media screen and (min-width: 992px) {
+    #outra-div{
+        background-color: green;
+        height: 20vh;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 10vh;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #div-3{
+        background-color: yellow;
+        height: 20vh;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 20vh;
+    }
+}

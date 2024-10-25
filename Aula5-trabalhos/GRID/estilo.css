@@ -1,0 +1,42 @@
+#conteiner{
+    display: grid;
+    gap: 5px;
+}
+
+#conteiner > div{
+    background-color: aqua;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#conteiner > div:nth-child(odd){
+    display: none;
+}
+
+@media screen and (min-width:760px) {
+    #conteiner {
+        grid-template-columns: auto auto;
+    }
+
+    #conteiner > div:nth-child(odd){
+        display: flex;
+    }
+}
+
+/* @media screen and (max-width:760px) {
+    #um {
+        display: none !important;
+    }
+    #tres{
+        display: none !important;
+    }
+    #cinco{
+        display: none !important;
+    }
+    
+} */

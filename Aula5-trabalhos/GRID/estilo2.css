@@ -1,0 +1,62 @@
+#conteiner{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        "a a"
+        "b c"
+        "d e"
+        "f f"
+    ;
+}
+
+#um{
+    grid-area: a;
+}
+#dois{
+    grid-area: b;
+}
+#tres{
+    grid-area: c;
+}
+#quatro{
+    grid-area: d;
+}
+#cinco{
+    grid-area: e;
+}
+#seis{
+    grid-area: f;
+}
+
+
+#conteiner > div{
+    background-color: aqua;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+@media screen and (min-width:760px) {
+    #conteiner {
+        grid-template-areas: 
+        "a a b"
+        "c d b"
+        "e f f"
+    ;
+
+    grid-template-rows: repeat(3,10rem);
+    }
+    /* #dois {
+        height: 100% !important;
+    } */
+
+    #conteiner > div{
+        height: 100%;
+    }
+
+    
+}
